@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contato-form');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault();
         const nome = document.getElementById('nome').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentSlide);
     }
 
-    setInterval(nextSlide, 3000); 
+    setInterval(nextSlide, 3000);
     showSlide(currentSlide);
 
 
     const links = document.querySelectorAll('nav a');
 
     links.forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-   
+
     const searchInput = document.getElementById('search');
     const destinoCards = document.querySelectorAll('.destino-card');
     const atividadeCards = document.querySelectorAll('.atividade-card');
 
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         const query = this.value.toLowerCase();
 
         destinoCards.forEach(card => {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenu = document.getElementById("hamburger-menu");
     const nav = document.getElementById("main-nav");
 
-    hamburgerMenu.addEventListener("click", function() {
+    hamburgerMenu.addEventListener("click", function () {
         if (nav.style.display === "block") {
             nav.style.display = "none";
         } else {
