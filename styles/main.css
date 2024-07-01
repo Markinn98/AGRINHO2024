@@ -1,0 +1,75 @@
+@import url(banners.css);
+@import url(rodape.css);
+@import url(header.css);
+@import url(responsividade.css);
+@import url(contato.css);
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(113, 84%, 93%);
+}
+
+#search {
+    padding: 10px; 
+    width: 300px; 
+    font-size: 16px; 
+    border: 3px solid #000000; 
+    border-radius: 10px; 
+    outline: none; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+#search:focus {
+    border-color: #00a308;
+    box-shadow: 0 0 5px rgba(255, 251, 0, 0.5); 
+}
+
+section {
+    padding: 5px;
+    font-family: 'Lora', serif;
+}
+
+.destino-card,
+.atividade-card {
+    border-radius: 10px; 
+    border: 3px solid #000000;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #1b27154d;
+}
+
+.destino-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    max-width: 70%;
+    max-height: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.atividade-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    max-width: 70%;
+    max-height: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+

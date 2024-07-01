@@ -1,0 +1,66 @@
+header {
+    background: linear-gradient(to right, #bdae27, #326e34);
+    color: #17440e;
+    padding: 10px 1px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 2em;
+    margin-left: 10px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+.logomarca {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logomarca img {
+    max-width: 50%;
+    max-height: 500px;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: rgb(16, 44, 4);
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
